@@ -16,6 +16,8 @@ VPN_SLICE=$(which vpn-slice)
 #echo
 USER=UserIDHere # Example: YTFG
 PW=PasswordHere # Example: ypNe#TNAu8awZU84j2CC
+#TOKEN=$(gauth token my-token) If you are using: https://github.com/faraazkhan/gauth
+# Or read it from STDIN if you are using phone
 read -p 'MFA Token: ' TOKEN
 
 if [ -z "${USER}" -o -z "${PW}" -o -z "${TOKEN}" ]; then
